@@ -1,0 +1,44 @@
+{
+  "paper": "YEckWPoS09",
+  "source_sha256": "2561f5fe38413c0fe8455d1f3e9e30ba24e75eb2837c96375e34bd98880bb8e8",
+  "scope": "Source-pinned finite audit of lower-bound, Poisson-control, sequential-test, and application formulas; it does not independently prove the source's asymptotic results or alpha-correctness theorem.",
+  "negative_controls": {
+    "fixed_null_trace_not_rejected": true,
+    "two_sided_not_one_sided_divergence": true,
+    "equal_row_kernel_is_linear_compatible": true
+  },
+  "claims": {
+    "C1": {
+      "status": "verified",
+      "anchor": "thm:lower_bound",
+      "finite_cells": 4
+    },
+    "C2": {
+      "status": "verified",
+      "anchor": "lem:control_solution_poisson",
+      "finite_cells": 4
+    },
+    "C3": {
+      "status": "verified",
+      "anchor": "alg:sequential_test",
+      "stopping_time": 356
+    },
+    "C4": {
+      "status": "verified",
+      "anchor": "thm:optimality",
+      "finite_cells": 3
+    },
+    "C5": {
+      "status": "verified",
+      "anchor": "thm:two_sided_test",
+      "finite_cells": 3
+    },
+    "C6": {
+      "status": "verified",
+      "anchor": "MCMC and linear-MDP corollaries",
+      "finite_cells": 2
+    }
+  },
+  "verified_claims": 6,
+  "falsified_claims": 0
+}

@@ -1,0 +1,8 @@
+{
+  "paper": "YEckWPoS09",
+  "gate": "passed",
+  "tests_passed": true,
+  "publication_gate_passed": true,
+  "verified_claims": 6,
+  "scope": "Source-pinned finite audit of lower-bound, Poisson-control, sequential-test, and application formulas; it does not independently prove the source's asymptotic results or alpha-correctness theorem."
+}
