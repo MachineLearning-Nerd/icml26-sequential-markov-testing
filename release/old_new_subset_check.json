@@ -1,0 +1,12 @@
+{
+  "byte_identical_old_paths": 19,
+  "candidate_file_count": 99,
+  "judged_revision": "aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362",
+  "missing_old_paths": [],
+  "navigation_files_changed_additively": [
+    "logbook.json",
+    "pages/index.md"
+  ],
+  "old_file_count": 21,
+  "old_paths_subset_of_candidate": true
+}

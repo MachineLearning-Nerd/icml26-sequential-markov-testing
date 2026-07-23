@@ -1,0 +1,11 @@
+{
+  "C_Q": 16.39753751167437,
+  "exact_poisson_operator_norm": 2.512472994451656,
+  "gamma_ps": 0.6968470009868073,
+  "gamma_ps_best_k": 1,
+  "information": 0.5255872657311822,
+  "pi_min": 0.10209328071071416,
+  "runtime_seconds": 0.02599495794856921,
+  "theta_projection": 0.4000000060480353,
+  "verdict": "VERIFIED"
+}

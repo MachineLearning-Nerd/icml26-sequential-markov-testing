@@ -1,0 +1,9 @@
+{
+  "correction_ratio_bound_holds": true,
+  "divergence_dominates_pi_min_f_inf": true,
+  "full_bound_includes_penalty": true,
+  "independent_stationary_agreement": true,
+  "nonvacuous_cell_present": true,
+  "poisson_bound_holds": true,
+  "poisson_equation_residual": 1.1102230246251565e-16
+}

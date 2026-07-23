@@ -1,0 +1,17 @@
+{
+  "mcmc_bad_detection_rate": 1.0,
+  "mcmc_good_false_rejections": 0,
+  "mcmc_mean_bad_stop": 2472.0,
+  "mdp_detection_rates": {
+    "3": 1.0,
+    "5": 1.0,
+    "7": 0.85
+  },
+  "mdp_mean_final_statistic": {
+    "3": 255267.6077697901,
+    "5": 241507.7857379665,
+    "7": 197174.94977687922
+  },
+  "runtime_seconds": 806.2130906250095,
+  "verdict": "VERIFIED"
+}

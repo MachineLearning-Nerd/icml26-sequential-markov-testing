@@ -1,0 +1,13 @@
+{
+  "fixed_command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "paper": "2602.17587",
+  "results": {
+    "claim1": "VERIFIED",
+    "claim2": "VERIFIED",
+    "claim3": "VERIFIED",
+    "claim4": "VERIFIED",
+    "claim5": "VERIFIED"
+  },
+  "runtime_seconds": 245.0055957500008,
+  "seed": 260217587
+}

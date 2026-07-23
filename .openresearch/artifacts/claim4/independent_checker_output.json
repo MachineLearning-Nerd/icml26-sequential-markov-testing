@@ -1,0 +1,7 @@
+{
+  "all_finite_power_one_runs_stopped": true,
+  "normal_false_alarm_rate": 0.0,
+  "normal_zero_alarm_cp_upper95": 0.014867039231272083,
+  "normalized_ratio_moves_toward_target": true,
+  "upper95_below_alpha": true
+}

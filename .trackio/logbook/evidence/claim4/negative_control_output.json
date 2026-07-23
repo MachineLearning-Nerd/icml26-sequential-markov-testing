@@ -1,0 +1,5 @@
+{
+  "false_alarm_rate": 1.0,
+  "mutant": "remove psi_t from beta_t",
+  "mutant_rejected": true
+}

@@ -1,0 +1,5 @@
+{
+  "acceptance": "Compute gamma_ps, the actual induced Poisson operator norm, and independently known two-state gamma_ps; require norm <= C_P.",
+  "statement": "Proposition 3.1 bounds the actual Poisson solution by its explicit pseudo-spectral-gap constant.",
+  "verdict": "VERIFIED"
+}

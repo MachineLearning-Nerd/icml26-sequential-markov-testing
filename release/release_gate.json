@@ -1,0 +1,50 @@
+{
+  "claims": {
+    "claim1": "VERIFIED",
+    "claim2": "VERIFIED",
+    "claim3": "VERIFIED",
+    "claim4": "VERIFIED",
+    "claim5": "VERIFIED",
+    "claim6": "VERIFIED"
+  },
+  "fixed_command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "logbook": {
+    "pages": 18,
+    "unique_slugs": true
+  },
+  "protected_subset": {
+    "byte_identical_old_paths": 19,
+    "candidate_file_count": 99,
+    "judged_revision": "aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362",
+    "missing_old_paths": [],
+    "navigation_files_changed_additively": [
+      "logbook.json",
+      "pages/index.md"
+    ],
+    "old_file_count": 21,
+    "old_paths_subset_of_candidate": true
+  },
+  "publication_approved": false,
+  "published": false,
+  "release_gate_passed": true,
+  "report_images": [
+    "images/headline_claim_status.png",
+    "images/algorithm1_boundary.png",
+    "images/one_sided_optimality.png",
+    "images/applications.png",
+    "images/controls_and_solver.png"
+  ],
+  "secret_scan": {
+    "files_scanned": 189,
+    "findings": 0
+  },
+  "upload": {
+    "extensions": [
+      ".csv",
+      ".json",
+      ".md"
+    ],
+    "files": 80,
+    "text_only": true
+  }
+}

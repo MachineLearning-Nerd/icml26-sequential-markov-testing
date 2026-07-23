@@ -1,14 +1,17 @@
 {
   "schema_version": 1,
-  "title": "Sequential Markov testing — reproducibility gate",
+  "title": "Repro - Sequential Markov Chain Test (arXiv 2602.17587)",
   "emoji": "🎯",
-  "space_id": null,
+  "space_id": "DineshAI/YEckWPoS09",
   "paper": null,
-  "tags": [],
-  "updated_at": "2026-07-22T13:36:12+00:00",
+  "tags": [
+    "icml2026-repro",
+    "paper-YEckWPoS09"
+  ],
+  "updated_at": "2026-07-23T12:23:52+00:00",
   "root": {
     "slug": "index",
-    "title": "Sequential Markov testing — reproducibility gate",
+    "title": "Repro - Sequential Markov Chain Test (arXiv 2602.17587)",
     "file": "pages/index.md",
     "children": [
       {
@@ -18,67 +21,109 @@
         "children": []
       },
       {
+        "slug": "claim-4-alpha-correct-optimal",
+        "title": "Claim 4 — alpha-correct + optimal (judged)",
+        "file": "pages/claim-4-alpha-correct-optimal/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-1-lower-bound",
+        "title": "Claim 1 — Lower bound (judged)",
+        "file": "pages/claim-1-lower-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-5-two-sided",
+        "title": "Claim 5 — Two-sided (judged)",
+        "file": "pages/claim-5-two-sided/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods",
+        "title": "Methods (judged)",
+        "file": "pages/methods/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion (judged)",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      },
+      {
+        "slug": "claims",
+        "title": "Claims",
+        "file": "pages/claims/page.md",
+        "children": []
+      },
+      {
+        "slug": "evidence",
+        "title": "Evidence (judged)",
+        "file": "pages/evidence/page.md",
+        "children": []
+      },
+      {
+        "slug": "verification-run",
+        "title": "Verification run (judged)",
+        "file": "pages/verification-run/page.md",
+        "children": []
+      },
+      {
+        "slug": "candidate-report",
+        "title": "Faithful campaign report",
+        "file": "pages/candidate-report/page.md",
+        "children": []
+      },
+      {
         "slug": "c1-lower-bound",
-        "title": "C1 lower bound",
+        "title": "C1 — full Theorem 3.3 lower bound",
         "file": "pages/c1-lower-bound/page.md",
         "children": []
       },
       {
         "slug": "c2-poisson-control",
-        "title": "C2 Poisson control",
+        "title": "C2 — Proposition 3.1 Poisson control",
         "file": "pages/c2-poisson-control/page.md",
         "children": []
       },
       {
         "slug": "c3-algorithm-1",
-        "title": "C3 Algorithm 1",
+        "title": "C3 — composite Algorithm 1",
         "file": "pages/c3-algorithm-1/page.md",
         "children": []
       },
       {
         "slug": "c4-one-sided-optimality",
-        "title": "C4 one-sided optimality",
+        "title": "C4 — one-sided alpha control and optimality",
         "file": "pages/c4-one-sided-optimality/page.md",
         "children": []
       },
       {
         "slug": "c5-two-sided-testing",
-        "title": "C5 two-sided testing",
+        "title": "C5 — two-sided composite test",
         "file": "pages/c5-two-sided-testing/page.md",
         "children": []
       },
       {
         "slug": "c6-applications",
-        "title": "C6 applications",
+        "title": "C6 — MCMC and linear-MDP applications",
         "file": "pages/c6-applications/page.md",
         "children": []
       },
       {
-        "slug": "methods",
-        "title": "Methods",
-        "file": "pages/methods/page.md",
-        "children": []
-      },
-      {
         "slug": "negative-controls",
-        "title": "Negative controls",
+        "title": "Candidate negative controls",
         "file": "pages/negative-controls/page.md",
         "children": []
       },
       {
         "slug": "tests-and-gate",
-        "title": "Tests and gate",
+        "title": "Candidate tests and release gate",
         "file": "pages/tests-and-gate/page.md",
-        "children": []
-      },
-      {
-        "slug": "conclusion",
-        "title": "Conclusion",
-        "file": "pages/conclusion/page.md",
         "children": []
       }
     ]
   },
-  "agent_view_tokens": 1379,
-  "revision": "1784727372609033452"
+  "agent_view_tokens": 6200,
+  "revision": "1784785391139844430"
 }

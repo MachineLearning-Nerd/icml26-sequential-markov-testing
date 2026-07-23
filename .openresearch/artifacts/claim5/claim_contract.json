@@ -1,0 +1,5 @@
+{
+  "acceptance": "Run both composite directions on the same paths, test both truths, and reject a singleton-SPRT substitution.",
+  "statement": "Theorem 4.4 two-sided construction from two parallel Algorithm 1 composite GLR tests.",
+  "verdict": "VERIFIED"
+}

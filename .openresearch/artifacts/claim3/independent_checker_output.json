@@ -1,0 +1,8 @@
+{
+  "adaptive_boundary_exact": true,
+  "composite_projection_theta_in_null": true,
+  "counts_sum_to_time": true,
+  "dense_grid_agreement": true,
+  "dense_grid_minus_refined": 0.0,
+  "refined_statistic_agreement": true
+}

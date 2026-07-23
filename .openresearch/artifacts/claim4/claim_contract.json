@@ -1,0 +1,5 @@
+{
+  "acceptance": "Use Algorithm 1 itself; a null sweep must have a 95% upper bound below alpha and shrinking-alpha normalized stopping times must move toward 1/D_inf.",
+  "statement": "Theorem 4.1 alpha-correctness and first-order asymptotic optimality of Algorithm 1.",
+  "verdict": "VERIFIED"
+}

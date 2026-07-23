@@ -1,0 +1,5 @@
+{
+  "acceptance": "Use both paper applications and composite nulls at the reported state/action dimensions, trial counts, and horizons; require valid-null controls and independent solver agreement.",
+  "statement": "Section 5 applies Algorithm 1 to MCMC stationary-kernel misspecification and linear-transition validation in MDPs.",
+  "verdict": "VERIFIED"
+}

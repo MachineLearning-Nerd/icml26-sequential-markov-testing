@@ -1,0 +1,24 @@
+{
+  "linear_mdp_null_controls": [
+    {
+      "L_t": 17933.495679727523,
+      "beta_t": 78465.88961207472,
+      "dimension": 3,
+      "rejected": false
+    },
+    {
+      "L_t": 19775.41452970018,
+      "beta_t": 82347.65268914176,
+      "dimension": 5,
+      "rejected": false
+    },
+    {
+      "L_t": 20105.65115834732,
+      "beta_t": 83295.27897084136,
+      "dimension": 7,
+      "rejected": false
+    }
+  ],
+  "mcmc_valid_null_false_rejections": 0,
+  "negative_controls_passed": true
+}

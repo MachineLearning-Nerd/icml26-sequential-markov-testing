@@ -1,0 +1,10 @@
+{
+  "backend": "local",
+  "compute": "Apple M2 CPU, 8 logical CPUs, 16 GB RAM",
+  "fixed_command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "git_sha": "69eb2f484b32ab603f856fd0fcdee1fd960fb4ba",
+  "paid_cost_usd": 0,
+  "run_id": "0a874377-72e3-48af-9134-d75c4d509b10",
+  "seed": 260217587,
+  "wall_time": "18m12s"
+}

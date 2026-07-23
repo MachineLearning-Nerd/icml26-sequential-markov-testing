@@ -1,0 +1,9 @@
+{
+  "command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "logical_cpu_count": 8,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.12.11",
+  "seed": 260217587,
+  "source_sha256": "2561f5fe38413c0fe8455d1f3e9e30ba24e75eb2837c96375e34bd98880bb8e8"
+}

@@ -1,0 +1,6 @@
+{
+  "composite_L": 27.140476834953972,
+  "mutant": "replace the composite GLR with a known-singleton-null SPRT objective",
+  "mutant_rejected": true,
+  "singleton_L": 28.22914829300378
+}

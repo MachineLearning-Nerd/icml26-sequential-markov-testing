@@ -1,0 +1,5 @@
+{
+  "acceptance": "A full stopping trace and an independent dense-grid GLR must match; a boundary mutant must be detected.",
+  "statement": "Algorithm 1 empirical kernel, row-wise composite GLR L_t, psi_t, beta_t, and stopping condition.",
+  "verdict": "VERIFIED"
+}

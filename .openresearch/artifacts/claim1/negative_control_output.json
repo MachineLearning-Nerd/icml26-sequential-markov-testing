@@ -1,0 +1,4 @@
+{
+  "mutant": "omit the -2 C_Q / pi_min correction",
+  "mutant_rejected": true
+}

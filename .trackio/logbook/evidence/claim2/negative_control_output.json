@@ -1,0 +1,5 @@
+{
+  "mutant": "replace C_P with 0.5 times the actual induced norm",
+  "mutant_rejected": true,
+  "violating_cells": 4
+}

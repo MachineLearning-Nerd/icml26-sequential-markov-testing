@@ -1,0 +1,8 @@
+{
+  "D_inf": 0.5255872657311822,
+  "false_alarms": 0,
+  "inverse_D": 1.9026336161490294,
+  "null_trials": 200,
+  "runtime_seconds": 30.323470957984682,
+  "verdict": "VERIFIED"
+}

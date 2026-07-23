@@ -1,8 +1,19 @@
-# C3 Algorithm 1
+# C3 — composite Algorithm 1
 
+**Verdict: VERIFIED**
 
----
-<!-- trackio-cell
-{"type": "markdown", "id": "cell_ccded6b0b2e2", "created_at": "2026-07-22T13:36:00+00:00", "title": "Sequential trace"}
--->
-A deterministic two-state trace follows Algorithm `alg:sequential_test`: transition counts, empirical rows, L_t, psi_t, and beta_t. It rejects the alternative at transition 356.
+The implementation follows Algorithm 1 rather than a known-alternative SPRT:
+transition counts, empirical row kernels, a continuous composite-null
+information projection, row-wise KL accumulation, `psi_t`, and
+`beta_t=(m-1)psi_t+log(1/alpha)`.
+
+The accepted five-state trace stops at transition `93`. Counts sum exactly to
+time, the refined GLR agrees with an independent 4,001-point dense grid, the
+boundary is recomputed independently, and the projected parameter lies in the
+null interval. Dropping the `(m-1)` multiplier changes the stop to `7`, so the
+boundary mutant is detected.
+
+- [Claim contract](../../evidence/claim3/claim_contract.json)
+- [Raw trace](../../evidence/claim3/raw_trace.json)
+- [Independent checker](../../evidence/claim3/independent_checker_output.json)
+- [Negative control](../../evidence/claim3/negative_control_output.json)

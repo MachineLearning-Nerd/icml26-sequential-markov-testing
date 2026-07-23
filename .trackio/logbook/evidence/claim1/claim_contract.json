@@ -1,0 +1,6 @@
+{
+  "acceptance": "All proof obligations and the full projected bound must pass; at least one bound cell must be non-vacuous.",
+  "quantifiers": "Every alpha in (0,1), ergodic Q, alpha-correct power-one test, and P in the null.",
+  "statement": "Theorem 3.3 full non-asymptotic lower bound, including the Poisson correction.",
+  "verdict": "VERIFIED"
+}

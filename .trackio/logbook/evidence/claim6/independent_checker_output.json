@@ -1,0 +1,19 @@
+{
+  "mcmc_solver_relative_gap": 3.3807181237855614e-07,
+  "mdp_solver_checks": [
+    {
+      "diagnostics": {
+        "iterations": 120,
+        "minimum_weight": 1e-10,
+        "row_sum_error": 1.1812772982011666e-13,
+        "solver": "scipy.optimize.SLSQP",
+        "success": true
+      },
+      "dimension": 5,
+      "independent_scipy_L": 241355.37341725937,
+      "primary_L": 241355.3837531765,
+      "relative_gap": 4.2824295584022426e-08
+    }
+  ],
+  "stationary_good_max_error": 1.3877787807814457e-16
+}

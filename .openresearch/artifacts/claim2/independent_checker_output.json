@@ -1,0 +1,5 @@
+{
+  "actual_poisson_operator_bounded": true,
+  "analytic_gap_agreement": true,
+  "finite_tail_certificate": true
+}

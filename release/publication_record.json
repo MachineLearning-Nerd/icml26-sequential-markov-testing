@@ -1,0 +1,13 @@
+{
+  "approval_received": true,
+  "awaiting_live_judge": true,
+  "baseline_judge_head": "aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362",
+  "baseline_score": "4/12",
+  "deletions": 0,
+  "evidence_commit": "f29ce36b662f3a0c43151829baec66d406744c5e",
+  "final_space_revision": "66d5e67b5426622768e4d797656e409526f3a299",
+  "published_at": "2026-07-23",
+  "space_id": "DineshAI/YEckWPoS09",
+  "status": "PUBLISHED_AWAITING_JUDGE",
+  "text_files_uploaded": 80
+}

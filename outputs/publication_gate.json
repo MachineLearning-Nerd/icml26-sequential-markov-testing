@@ -1,8 +1,20 @@
 {
   "paper": "YEckWPoS09",
-  "gate": "passed",
+  "gate": "release-candidate-ready",
   "tests_passed": true,
-  "publication_gate_passed": true,
-  "verified_claims": 6,
-  "scope": "Source-pinned finite audit of lower-bound, Poisson-control, sequential-test, and application formulas; it does not independently prove the source's asymptotic results or alpha-correctness theorem."
+  "publication_gate_passed": false,
+  "release_gate_passed": true,
+  "publication_approved": false,
+  "published": false,
+  "legacy_regression_passed": true,
+  "core_claims": {
+    "claim1": "VERIFIED",
+    "claim2": "VERIFIED",
+    "claim3": "VERIFIED",
+    "claim4": "VERIFIED",
+    "claim5": "VERIFIED"
+  },
+  "application_claim": "VERIFIED",
+  "remaining_claims": [],
+  "scope": "C1-C6 evidence and all release checks passed locally. Publication remains closed until explicit user approval."
 }
