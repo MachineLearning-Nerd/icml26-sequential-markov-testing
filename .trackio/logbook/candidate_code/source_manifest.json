@@ -1,0 +1,22 @@
+{
+  "candidate_code/markov_core.py": {
+    "repository_path": "repro/src/markov_core.py",
+    "sha256": "bbfd11dc780307a6fa12c228aa4cc468604b8d893ee5c5c91bd22cf53bc2b2bc"
+  },
+  "candidate_code/run_applications.py": {
+    "repository_path": "repro/src/run_applications.py",
+    "sha256": "2864439cea73eee21e14db6a9d462370e839a388812110e916e4eda9aeba0a48"
+  },
+  "candidate_code/run_core_campaign.py": {
+    "repository_path": "repro/src/run_core_campaign.py",
+    "sha256": "5543432264b2c955a2dea29f355a82fea82a5537e5a3e99e27cd30f3a3e97b8a"
+  },
+  "candidate_code/test_markov_core.py": {
+    "repository_path": "repro/tests/test_markov_core.py",
+    "sha256": "5c6efcf6d707d0b0156e7e9aab474cad0be3f9509bd9e2e1acbee5fc35368efc"
+  },
+  "verify_candidate.py": {
+    "repository_path": "repro/src/verify_judge_bundle.py",
+    "sha256": "9a84abbbd430618fd4b3e829ec3261f5f5cba270c68719979b547e68a3b688a1"
+  }
+}

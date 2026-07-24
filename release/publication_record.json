@@ -1,13 +1,15 @@
 {
   "approval_received": true,
   "awaiting_live_judge": true,
-  "baseline_judge_head": "aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362",
-  "baseline_score": "4/12",
+  "baseline_judge_head": "66d5e67b5426622768e4d797656e409526f3a299",
+  "baseline_score": "5/12",
   "deletions": 0,
-  "evidence_commit": "f29ce36b662f3a0c43151829baec66d406744c5e",
-  "final_space_revision": "66d5e67b5426622768e4d797656e409526f3a299",
-  "published_at": "2026-07-23",
+  "evidence_commit": "c9f4f905993eda348b395b80ea9aac9447f5a170",
+  "final_space_revision": "a3b49a603d3777270e8e1cd11eb312f4e92efbe2",
+  "formal_run": "52034fa5-5314-4042-abeb-4b3b231745f8",
+  "published_at": "2026-07-24",
   "space_id": "DineshAI/YEckWPoS09",
   "status": "PUBLISHED_AWAITING_JUDGE",
-  "text_files_uploaded": 80
+  "publication_metadata_files": 5,
+  "text_files_uploaded": 91
 }

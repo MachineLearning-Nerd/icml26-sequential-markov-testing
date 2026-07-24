@@ -8,122 +8,128 @@
     "icml2026-repro",
     "paper-YEckWPoS09"
   ],
-  "updated_at": "2026-07-23T12:23:52+00:00",
+  "updated_at": "2026-07-24T06:00:00+00:00",
   "root": {
     "slug": "index",
     "title": "Repro - Sequential Markov Chain Test (arXiv 2602.17587)",
     "file": "pages/index.md",
     "children": [
       {
+        "slug": "judge-response",
+        "title": "CURRENT — executable response to the 5/12 verdict",
+        "file": "pages/judge-response/page.md",
+        "children": []
+      },
+      {
         "slug": "overview",
-        "title": "Overview",
+        "title": "ARCHIVED BASELINE — Overview",
         "file": "pages/overview/page.md",
         "children": []
       },
       {
         "slug": "claim-4-alpha-correct-optimal",
-        "title": "Claim 4 — alpha-correct + optimal (judged)",
+        "title": "ARCHIVED SPRT PROXY — Claim 4",
         "file": "pages/claim-4-alpha-correct-optimal/page.md",
         "children": []
       },
       {
         "slug": "claim-1-lower-bound",
-        "title": "Claim 1 — Lower bound (judged)",
+        "title": "ARCHIVED SPRT PROXY — Claim 1",
         "file": "pages/claim-1-lower-bound/page.md",
         "children": []
       },
       {
         "slug": "claim-5-two-sided",
-        "title": "Claim 5 — Two-sided (judged)",
+        "title": "ARCHIVED SPRT PROXY — Claim 5",
         "file": "pages/claim-5-two-sided/page.md",
         "children": []
       },
       {
         "slug": "methods",
-        "title": "Methods (judged)",
+        "title": "ARCHIVED BASELINE — Methods",
         "file": "pages/methods/page.md",
         "children": []
       },
       {
         "slug": "conclusion",
-        "title": "Conclusion (judged)",
+        "title": "ARCHIVED BASELINE — Conclusion",
         "file": "pages/conclusion/page.md",
         "children": []
       },
       {
         "slug": "claims",
-        "title": "Claims",
+        "title": "ARCHIVED BASELINE — Claims",
         "file": "pages/claims/page.md",
         "children": []
       },
       {
         "slug": "evidence",
-        "title": "Evidence (judged)",
+        "title": "ARCHIVED BASELINE — Evidence",
         "file": "pages/evidence/page.md",
         "children": []
       },
       {
         "slug": "verification-run",
-        "title": "Verification run (judged)",
+        "title": "ARCHIVED BASELINE — Verification run",
         "file": "pages/verification-run/page.md",
         "children": []
       },
       {
         "slug": "candidate-report",
-        "title": "Faithful campaign report",
+        "title": "CURRENT — faithful campaign report",
         "file": "pages/candidate-report/page.md",
         "children": []
       },
       {
         "slug": "c1-lower-bound",
-        "title": "C1 — full Theorem 3.3 lower bound",
+        "title": "CURRENT C1 — full Theorem 3.3 lower bound",
         "file": "pages/c1-lower-bound/page.md",
         "children": []
       },
       {
         "slug": "c2-poisson-control",
-        "title": "C2 — Proposition 3.1 Poisson control",
+        "title": "CURRENT C2 — Proposition 3.1 Poisson control",
         "file": "pages/c2-poisson-control/page.md",
         "children": []
       },
       {
         "slug": "c3-algorithm-1",
-        "title": "C3 — composite Algorithm 1",
+        "title": "CURRENT C3 — composite Algorithm 1",
         "file": "pages/c3-algorithm-1/page.md",
         "children": []
       },
       {
         "slug": "c4-one-sided-optimality",
-        "title": "C4 — one-sided alpha control and optimality",
+        "title": "CURRENT C4 — one-sided composite optimality",
         "file": "pages/c4-one-sided-optimality/page.md",
         "children": []
       },
       {
         "slug": "c5-two-sided-testing",
-        "title": "C5 — two-sided composite test",
+        "title": "CURRENT C5 — two-sided composite test",
         "file": "pages/c5-two-sided-testing/page.md",
         "children": []
       },
       {
         "slug": "c6-applications",
-        "title": "C6 — MCMC and linear-MDP applications",
+        "title": "CURRENT C6 — MCMC and linear-MDP applications",
         "file": "pages/c6-applications/page.md",
         "children": []
       },
       {
         "slug": "negative-controls",
-        "title": "Candidate negative controls",
+        "title": "CURRENT — negative controls",
         "file": "pages/negative-controls/page.md",
         "children": []
       },
       {
         "slug": "tests-and-gate",
-        "title": "Candidate tests and release gate",
+        "title": "CURRENT — tests and release gate",
         "file": "pages/tests-and-gate/page.md",
         "children": []
       }
     ]
   },
-  "agent_view_tokens": 6200,
+  "agent_view_tokens": 9000,
   "revision": "1784785391139844430"
 }

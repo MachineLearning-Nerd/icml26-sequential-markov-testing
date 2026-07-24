@@ -48,17 +48,17 @@ def claim_overview() -> None:
         "C5 two-sided",
         "C6 applications",
     ]
-    judged_credit = np.array([1, 0, 1, 1, 1, 0], dtype=float)
+    judged_credit = np.array([1, 0, 1, 1, 1, 1], dtype=float)
     contract_pass = np.array([1, 1, 1, 1, 1, 1], dtype=float)
     y = np.arange(len(labels))
     fig, ax = plt.subplots(figsize=(10.5, 4.8))
-    ax.barh(y + 0.18, judged_credit / 2, height=0.3, color=PALE, label="Live judged credit (4/12)")
+    ax.barh(y + 0.18, judged_credit / 2, height=0.3, color=PALE, label="Live judged credit (5/12)")
     ax.barh(y - 0.18, contract_pass, height=0.3, color=GREEN, label="Candidate claim contract passed")
     ax.set_yticks(y, labels)
     ax.set_xlim(0, 1.03)
     ax.set_xticks([0, 0.5, 1], ["0", "partial", "complete"])
     ax.invert_yaxis()
-    ax.set_title("All six faithful contracts pass; the live judge has not evaluated them")
+    ax.set_title("The 5/12 revision omitted the executable evidence behind all six contracts")
     ax.legend(
         loc="upper center",
         bbox_to_anchor=(0.5, -0.14),
@@ -66,7 +66,7 @@ def claim_overview() -> None:
         frameon=False,
     )
     ax.grid(axis="x", alpha=0.2)
-    fig.text(0.98, 0.02, "Candidate status is not a predicted judge score", color=RED, fontsize=9, ha="right")
+    fig.text(0.98, 0.02, "Executable repair published; awaiting a new live verdict", color=RED, fontsize=9, ha="right")
     fig.subplots_adjust(bottom=0.24)
     save(fig, "headline_claim_status.png")
 

@@ -127,25 +127,44 @@ Read-only diagnostics also used `rg`, `sed`, `find`, `shasum -a 256`, `du`,
 and `cp` copied the immutable judged tree and accepted-run text artifacts into
 the candidate without deleting source evidence.
 
-## Approved publication
+## 5/12 verdict audit and executable-evidence repair
 
-After explicit user approval, publication used the existing authenticated
-Hugging Face identity and the lower-level `huggingface_hub` commit API. The API
-operations were constructed only from `release/hf_upload_allowlist.txt`, used
-the judged revision as `parent_commit`, and contained no delete operation. No
-token value was passed on the command line or printed.
+```text
+orx projects --json
+orx runs d98973ef-8800-435c-aa86-6532ef555fc9
+orx create-experiment d98973ef-8800-435c-aa86-6532ef555fc9 --title 'Judge-visible executable claim evidence' --parent 74ed4503-75cd-433f-ab00-4659770a12c6
+git checkout orx/judge-visible-executable-claim-evidence
+uv run python repro/src/verify_judge_bundle.py
+uv run python repro/src/prepare_release.py
+uv run python -B .trackio/logbook/verify_candidate.py
+```
+
+The live verdict was selected only by
+`space_id == "DineshAI/YEckWPoS09"`. The audited judged revision was
+`66d5e67b5426622768e4d797656e409526f3a299`; its 99-file manifest contained
+zero Python files. The repair makes the faithful implementation and independent
+checker part of the exact text-only upload allowlist.
+
+## Approved publication
 
 ```text
 hf auth whoami
-hf spaces info DineshAI/YEckWPoS09 --expand sha --format json
-HfApi.create_commit(repo_id="DineshAI/YEckWPoS09", repo_type="space", revision="main", parent_commit="aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362", operations=<80 allowlisted text additions>)
-HfApi.create_commit(repo_id="DineshAI/YEckWPoS09", repo_type="space", revision="main", parent_commit="f29ce36b662f3a0c43151829baec66d406744c5e", operations=<2 publication-status text additions>)
-hf download DineshAI/YEckWPoS09 --type space --revision 66d5e67b5426622768e4d797656e409526f3a299 --local-dir <temporary-verification-directory>
-git worktree add --detach <temporary-publication-worktree> origin/main
-git push origin HEAD:main
+hf download DineshAI/YEckWPoS09 --type space --revision c9f4f905993eda348b395b80ea9aac9447f5a170 --local-dir <temporary-verification-directory> --quiet
+hf download DineshAI/YEckWPoS09 --type space --revision a3b49a603d3777270e8e1cd11eb312f4e92efbe2 --local-dir <temporary-verification-directory> --quiet
 git ls-remote origin refs/heads/main
 ```
 
-The first Space commit is
-`f29ce36b662f3a0c43151829baec66d406744c5e`; the final publication-status
-revision is `66d5e67b5426622768e4d797656e409526f3a299`.
+The high-level `hf upload` command was rejected before committing because it
+unnecessarily called the rate-limited repository-creation endpoint. The
+existing Space remained unchanged. Publication then used
+`HfApi.create_commit` directly against the existing repository with
+`parent_commit` pinned:
+
+- evidence commit `c9f4f905993eda348b395b80ea9aac9447f5a170` uploaded the exact
+  91-file allowlist with zero deletions;
+- metadata commit `a3b49a603d3777270e8e1cd11eb312f4e92efbe2` changed five existing
+  pages to `PUBLISHED_AWAITING_JUDGE`;
+- the final revision was independently downloaded, contained 109 files,
+  retained both protected trees, and passed `verify_candidate.py` for C1–C6.
+
+No token, credential value, or generated request wrapper was printed.

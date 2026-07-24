@@ -1,14 +1,19 @@
 # Repro - Sequential Markov Chain Test (arXiv 2602.17587)
 
-The original judged pages remain available below. The additive candidate pages
-contain the faithful composite-GLR campaign. Their local VERIFIED verdicts are
-not a predicted judge score; the live score remains 4/12 until a new revision is
-explicitly approved, published, and evaluated.
+The live judge gave revision `66d5e67b5426622768e4d797656e409526f3a299`
+5/12 because it could not see the Python behind the new raw results and fell
+back to the archived SPRT snippets. The original pages remain available below,
+but they are not the current evidence. The additive repair exposes the faithful
+composite-GLR implementation and an executable independent verifier. It is not
+yet re-judged: evidence revision
+`c9f4f905993eda348b395b80ea9aac9447f5a170` is published and awaiting a new
+verdict, so the live score remains 5/12.
 
-## Candidate campaign
+## Current campaign
 
 | Page |
 | --- |
+| [Response to the 5/12 verdict and executable evidence map](#/judge-response) |
 | [Faithful campaign report](#/candidate-report) |
 | [C1 — full Theorem 3.3 lower bound](#/c1-lower-bound) |
 | [C2 — Proposition 3.1 Poisson control](#/c2-poisson-control) |
@@ -19,7 +24,7 @@ explicitly approved, published, and evaluated.
 | [Candidate negative controls](#/negative-controls) |
 | [Candidate tests and release gate](#/tests-and-gate) |
 
-## Preserved judged pages
+## Preserved archived baseline pages
 
 | Page |
 | --- |

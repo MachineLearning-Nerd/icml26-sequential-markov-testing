@@ -31,7 +31,7 @@ def _(mo):
 @app.cell
 def _(np, plt):
     claims = np.arange(1, 7)
-    judged_credit = np.array([1, 0, 1, 1, 1, 0]) / 2
+    judged_credit = np.array([1, 0, 1, 1, 1, 1]) / 2
     candidate_contracts = np.ones(6)
     figure_headline, axis_headline = plt.subplots(figsize=(9, 3.8))
     axis_headline.bar(
@@ -39,7 +39,7 @@ def _(np, plt):
         judged_credit,
         width=0.34,
         color="#cbd5e1",
-        label="Live judged credit (4/12)",
+        label="Live judged credit (5/12)",
     )
     axis_headline.bar(
         claims + 0.17,
@@ -53,7 +53,7 @@ def _(np, plt):
         xticklabels=[f"C{claim}" for claim in claims],
         ylim=(0, 1.08),
         ylabel="Contract completeness",
-        title="All six faithful contracts pass; the live judge has not evaluated them",
+        title="The published 5/12 revision omitted executable claim evidence",
     )
     axis_headline.legend(frameon=False, ncol=2)
     axis_headline.grid(axis="y", alpha=0.2)
@@ -66,9 +66,12 @@ def _(mo):
     mo.md(
         r"""
         The green bars are **not a predicted score**. They summarize local
-        fail-closed contracts; the public judge remains at its earlier 4/12
-        assessment until a new Space revision is explicitly approved,
-        published, and judged.
+        fail-closed contracts. The public judge awarded 5/12 to Space revision
+        `66d5e67b5426622768e4d797656e409526f3a299` because its 99-file tree
+        contained raw results and pages but no Python implementation. The
+        executable repair is now published at revision
+        `a3b49a603d3777270e8e1cd11eb312f4e92efbe2` and is awaiting a new
+        judge verdict.
 
         ## What Algorithm 1 does
 

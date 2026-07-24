@@ -2,6 +2,12 @@
 
 **Verdict: VERIFIED**
 
+**Executable evidence.** [`run_claim1`](../../candidate_code/run_core_campaign.py)
+computes the projection, stationary law, Poisson solution, `C_Q`, and the full
+correction. [`verify_claim1`](../../verify_candidate.py) recomputes them from
+scratch and checks the published CSV; its precomputed output is
+[`judge_visible_verifier.json`](../../evidence/judge_visible_verifier.json).
+
 This check retains the term omitted by the old reproduction:
 
 \[
@@ -24,4 +30,5 @@ rejected.
 - [Claim contract](../../evidence/claim1/claim_contract.json)
 - [Raw bound cells](../../evidence/claim1/raw_lower_bound.csv)
 - [Independent checker](../../evidence/claim1/independent_checker_output.json)
+- [Executable source manifest](../../candidate_code/source_manifest.json)
 - [Limitations](../../evidence/claim1/limitations_and_deviations.md)

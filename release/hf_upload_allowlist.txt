@@ -1,3 +1,11 @@
+README.md
+candidate_code/README.md
+candidate_code/markov_core.py
+candidate_code/requirements.txt
+candidate_code/run_applications.py
+candidate_code/run_core_campaign.py
+candidate_code/source_manifest.json
+candidate_code/test_markov_core.py
 evidence/application_summary.json
 evidence/claim1/EVAL.md
 evidence/claim1/accepted_run.json
@@ -67,6 +75,7 @@ evidence/claim6/raw_mdp.csv
 evidence/claim6/source_audit.md
 evidence/claim6/verifier_output.json
 evidence/core_summary.json
+evidence/judge_visible_verifier.json
 logbook.json
 pages/c1-lower-bound/page.md
 pages/c2-poisson-control/page.md
@@ -76,5 +85,7 @@ pages/c5-two-sided-testing/page.md
 pages/c6-applications/page.md
 pages/candidate-report/page.md
 pages/index.md
+pages/judge-response/page.md
 pages/negative-controls/page.md
 pages/tests-and-gate/page.md
+verify_candidate.py

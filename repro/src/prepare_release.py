@@ -3,7 +3,9 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -28,8 +30,34 @@ REQUIRED_CLAIM_FILES = {
     "EVAL.md",
     "limitations_and_deviations.md",
 }
-ALLOWED_TEXT_SUFFIXES = {".md", ".json", ".csv", ".txt"}
-MUTABLE_OLD_PATHS = {"logbook.json", "pages/index.md"}
+ALLOWED_TEXT_SUFFIXES = {".md", ".json", ".csv", ".txt", ".py"}
+MUTABLE_OLD_PATHS = {"README.md", "logbook.json", "pages/index.md"}
+MUTABLE_LATEST_JUDGED_PATHS = MUTABLE_OLD_PATHS | {
+    "pages/c1-lower-bound/page.md",
+    "pages/c2-poisson-control/page.md",
+    "pages/c3-algorithm-1/page.md",
+    "pages/c4-one-sided-optimality/page.md",
+    "pages/c5-two-sided-testing/page.md",
+    "pages/c6-applications/page.md",
+    "pages/candidate-report/page.md",
+    "pages/tests-and-gate/page.md",
+}
+JUDGE_SOURCE_MAP = {
+    ROOT / "repro" / "src" / "markov_core.py": LOGBOOK
+    / "candidate_code"
+    / "markov_core.py",
+    ROOT / "repro" / "src" / "run_core_campaign.py": LOGBOOK
+    / "candidate_code"
+    / "run_core_campaign.py",
+    ROOT / "repro" / "src" / "run_applications.py": LOGBOOK
+    / "candidate_code"
+    / "run_applications.py",
+    ROOT / "repro" / "tests" / "test_markov_core.py": LOGBOOK
+    / "candidate_code"
+    / "test_markov_core.py",
+    ROOT / "repro" / "src" / "verify_judge_bundle.py": LOGBOOK
+    / "verify_candidate.py",
+}
 SECRET_PATTERNS = {
     "huggingface_token": re.compile(r"hf_[A-Za-z0-9]{20,}"),
     "github_token": re.compile(r"gh[pousr]_[A-Za-z0-9]{20,}"),
@@ -102,7 +130,57 @@ def validate_logbook() -> dict:
     assert len(slugs) == len(set(slugs))
     for child in children:
         assert (LOGBOOK / child["file"]).is_file(), child["file"]
+    assert children[0]["slug"] == "judge-response"
+    assert (LOGBOOK / "verify_candidate.py").is_file()
     return {"pages": len(children), "unique_slugs": True}
+
+
+def prepare_judge_bundle() -> dict:
+    manifest = {}
+    for source, destination in JUDGE_SOURCE_MAP.items():
+        assert source.is_file(), source
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
+        assert sha256(source) == sha256(destination)
+        manifest[destination.relative_to(LOGBOOK).as_posix()] = {
+            "repository_path": source.relative_to(ROOT).as_posix(),
+            "sha256": sha256(source),
+        }
+    verifier_output = ARTIFACTS / "judge_visible_verifier.json"
+    assert verifier_output.is_file()
+    exposed_output = LOGBOOK / "evidence" / verifier_output.name
+    subprocess.run(
+        [
+            sys.executable,
+            "-B",
+            "verify_candidate.py",
+            "--output",
+            exposed_output.relative_to(LOGBOOK).as_posix(),
+        ],
+        cwd=LOGBOOK,
+        check=True,
+    )
+    (LOGBOOK / "candidate_code" / "source_manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n"
+    )
+    result = json.loads(verifier_output.read_text())
+    exposed_result = json.loads(exposed_output.read_text())
+    assert result["verdict"] == exposed_result["verdict"] == "VERIFIED"
+    assert result["claims"] == exposed_result["claims"]
+    assert exposed_result["code_root"] == "candidate_code"
+    assert exposed_result["evidence_root"] == "evidence"
+    assert set(result["claims"]) == {f"claim{index}" for index in range(1, 7)}
+    assert all(
+        claim["verdict"] == "VERIFIED" for claim in result["claims"].values()
+    )
+    return {
+        "files_mirrored": len(JUDGE_SOURCE_MAP),
+        "byte_identical": True,
+        "verifier_verdict": result["verdict"],
+        "claim_verdicts": {
+            name: claim["verdict"] for name, claim in result["claims"].items()
+        },
+    }
 
 
 def validate_protected_subset() -> dict:
@@ -131,6 +209,31 @@ def validate_protected_subset() -> dict:
         "missing_old_paths": [],
         "byte_identical_old_paths": len(preserved),
         "navigation_files_changed_additively": sorted(changed),
+    }
+    latest_paths = parse_manifest(
+        RELEASE / "protected_judged_5of12_file_manifest.txt"
+    )
+    latest_hashes = parse_hashes(
+        RELEASE / "protected_judged_5of12_sha256s.txt"
+    )
+    latest_missing = sorted(set(latest_paths) - candidate_paths)
+    assert not latest_missing
+    latest_changed = []
+    latest_preserved = []
+    for relative in latest_paths:
+        if sha256(LOGBOOK / relative) == latest_hashes[relative]:
+            latest_preserved.append(relative)
+        else:
+            latest_changed.append(relative)
+    assert set(latest_changed) <= MUTABLE_LATEST_JUDGED_PATHS
+    result["latest_judged_5of12"] = {
+        "judged_revision": "66d5e67b5426622768e4d797656e409526f3a299",
+        "score": "5/12",
+        "old_file_count": len(latest_paths),
+        "old_paths_subset_of_candidate": True,
+        "missing_old_paths": [],
+        "byte_identical_old_paths": len(latest_preserved),
+        "current_evidence_files_changed_additively": sorted(latest_changed),
     }
     (RELEASE / "old_new_subset_check.json").write_text(
         json.dumps(result, indent=2, sort_keys=True) + "\n"
@@ -207,6 +310,7 @@ def scan_secrets() -> dict:
 def main() -> None:
     verdicts = validate_claim_artifacts()
     report_images = validate_report()
+    judge_bundle = prepare_judge_bundle()
     logbook = validate_logbook()
     subset = validate_protected_subset()
     upload = build_upload_allowlist()
@@ -219,6 +323,7 @@ def main() -> None:
         "claims": verdicts,
         "report_images": report_images,
         "logbook": logbook,
+        "judge_visible_bundle": judge_bundle,
         "protected_subset": subset,
         "upload": upload,
         "secret_scan": secrets,

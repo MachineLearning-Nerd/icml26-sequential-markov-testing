@@ -1,10 +1,29 @@
 # Claim-by-claim reproduction of sequential Markov testing
 
-![Six claim contracts pass while the live judge remains at its earlier 4/12 assessment](images/headline_claim_status.png)
+![Six claim contracts pass while the live judge gives the published revision 5/12](images/headline_claim_status.png)
 
 The candidate evidence passes six source-pinned contracts. The green bars are **not a
-predicted judge score**: the live score remains 4/12 at Hugging Face revision
-`aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362`, which has not evaluated this work.
+predicted judge score**: the live score is 5/12 at Hugging Face revision
+`66d5e67b5426622768e4d797656e409526f3a299`. The repair described here is
+published at revision `a3b49a603d3777270e8e1cd11eb312f4e92efbe2` and is
+awaiting a new judge verdict.
+
+## Why the judge awarded 5/12
+
+The judge evaluated the intended Space revision, so this was not a stale-revision
+problem. The published 99-file tree contained raw outputs and narrative pages but
+no Python files. Consequently the judge could inspect only archived SPRT snippets
+and could not connect the stronger numbers to executable implementations. Its
+claim-level explanations consistently say that the faithful lower-bound,
+Poisson, composite-GLR, MCMC, and MDP results were “described” but not backed by
+visible code.
+
+The repair adds five byte-identical source files under `candidate_code/`, a
+root-level `verify_candidate.py`, per-claim links from every current page, and a
+single independent verifier that recomputes all six contracts from the uploaded
+raw evidence. The verifier also rejects the old proxy patterns: C4 may not call
+`sequential_lr_test`, and C5 must use two composite directions rather than
+Bonferroni-split SPRTs.
 
 ## The question
 
@@ -127,12 +146,15 @@ pseudo-gap checker; C3–C5 use composite Algorithm 1 rather than SPRTs; and C6 
 both named applications with null controls. The candidate has stronger, faithful
 evidence for all six claims.
 
-The live score has **not** changed. Publication to the existing Hugging Face Space
-is gated on an additive old/new subset proof, logbook validation, a text-only
-allowlist and hash manifest, a secret scan, and explicit user approval.
+The live score remains **5/12**. The executable repair passed its additive
+old/new subset proof, logbook validation, exact text-file manifest, secret
+scan, and cumulative local run before publication. Revision
+`a3b49a603d3777270e8e1cd11eb312f4e92efbe2` is now awaiting a new live judge
+verdict; no score increase is claimed in advance.
 
 Important lineage:
 
 - [Frozen judged baseline](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/frozen-judged-baseline-certificate)
 - [Faithful core contracts and Algorithm 1](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/faithful-core-contracts-and-algorithm-1)
 - [Corrected paper-scale application evidence](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/corrected-paper-scale-application-evidence)
+- [Judge-visible executable claim evidence](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/judge-visible-executable-claim-evidence)

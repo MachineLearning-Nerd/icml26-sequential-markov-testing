@@ -8,24 +8,59 @@
     "claim6": "VERIFIED"
   },
   "fixed_command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "judge_visible_bundle": {
+    "byte_identical": true,
+    "claim_verdicts": {
+      "claim1": "VERIFIED",
+      "claim2": "VERIFIED",
+      "claim3": "VERIFIED",
+      "claim4": "VERIFIED",
+      "claim5": "VERIFIED",
+      "claim6": "VERIFIED"
+    },
+    "files_mirrored": 5,
+    "verifier_verdict": "VERIFIED"
+  },
   "logbook": {
-    "pages": 18,
+    "pages": 19,
     "unique_slugs": true
   },
   "protected_subset": {
-    "byte_identical_old_paths": 19,
-    "candidate_file_count": 99,
+    "byte_identical_old_paths": 18,
+    "candidate_file_count": 109,
     "judged_revision": "aa9d60e48d7ec637d6e5b8d37ba3bdaba95ef362",
+    "latest_judged_5of12": {
+      "byte_identical_old_paths": 88,
+      "current_evidence_files_changed_additively": [
+        "README.md",
+        "logbook.json",
+        "pages/c1-lower-bound/page.md",
+        "pages/c2-poisson-control/page.md",
+        "pages/c3-algorithm-1/page.md",
+        "pages/c4-one-sided-optimality/page.md",
+        "pages/c5-two-sided-testing/page.md",
+        "pages/c6-applications/page.md",
+        "pages/candidate-report/page.md",
+        "pages/index.md",
+        "pages/tests-and-gate/page.md"
+      ],
+      "judged_revision": "66d5e67b5426622768e4d797656e409526f3a299",
+      "missing_old_paths": [],
+      "old_file_count": 99,
+      "old_paths_subset_of_candidate": true,
+      "score": "5/12"
+    },
     "missing_old_paths": [],
     "navigation_files_changed_additively": [
+      "README.md",
       "logbook.json",
       "pages/index.md"
     ],
     "old_file_count": 21,
     "old_paths_subset_of_candidate": true
   },
-  "publication_approved": false,
-  "published": false,
+  "publication_approved": true,
+  "published": true,
   "release_gate_passed": true,
   "report_images": [
     "images/headline_claim_status.png",
@@ -35,16 +70,18 @@
     "images/controls_and_solver.png"
   ],
   "secret_scan": {
-    "files_scanned": 189,
+    "files_scanned": 203,
     "findings": 0
   },
   "upload": {
     "extensions": [
       ".csv",
       ".json",
-      ".md"
+      ".md",
+      ".py",
+      ".txt"
     ],
-    "files": 80,
+    "files": 91,
     "text_only": true
   }
 }

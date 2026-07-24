@@ -2,6 +2,14 @@
 
 **Verdict: VERIFIED**
 
+**Executable evidence.** [`run_mcmc` and
+`run_mdp`](../../candidate_code/run_applications.py) expose the exact
+five-state stationary-null projection, Gymnasium `MountainCar-v0`, 8×8 grid,
+three actions, 20 paths, 100,000 transitions, and `d=3,5,7`.
+[`verify_claim6`](../../verify_candidate.py) checks the code and every raw trial
+count, solver comparison, detection rate, and null control; see its
+[`precomputed output`](../../evidence/judge_visible_verifier.json).
+
 Both named applications are reproduced.
 
 For MCMC, the exact Appendix-G five-state target and matrices give
@@ -25,4 +33,5 @@ The source omits the RBF bandwidth and seeds; this reproduction pins
 - [Raw MDP rows](../../evidence/claim6/raw_mdp.csv)
 - [Independent solvers](../../evidence/claim6/independent_checker_output.json)
 - [Null controls](../../evidence/claim6/negative_control_output.json)
+- [Executable source manifest](../../candidate_code/source_manifest.json)
 - [Limitations](../../evidence/claim6/limitations_and_deviations.md)
