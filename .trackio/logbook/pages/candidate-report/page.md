@@ -1,9 +1,10 @@
 # Faithful campaign report
 
 All six source-pinned candidate contracts are **VERIFIED**. This is not a
-predicted judge score: the live judge gave the published revision 5/12 because
-the Space omitted the faithful Python implementation. This repair exposes that
-code and is now published awaiting a new judge verdict.
+predicted judge score: the live judge gave revision
+`a3b49a603d3777270e8e1cd11eb312f4e92efbe2` 6/12, with each claim labelled
+`TOY`. This candidate preserves that revision and makes the relevant producer
+and checker operations visible directly on every claim page.
 
 The campaign replaces known-alternative SPRT proxies with the paper's
 composite Algorithm 1 and directly answers every prior criticism:
@@ -17,7 +18,11 @@ The illustrated report, notebook, and figures are mirrored in the GitHub
 release candidate. Raw evidence for every claim is available under
 [`evidence/`](../../evidence/).
 
-Start with the [executable response to the 5/12
-verdict](#/judge-response). Evidence revision
-`c9f4f905993eda348b395b80ea9aac9447f5a170` contains the complete executable
-bundle; the live score remains 5/12 until the judge evaluates it.
+The cumulative gate also passed on [Hugging Face `cpu-upgrade` Job
+6a6cb983a00abefd4b289c24](https://huggingface.co/jobs/DineshAI/6a6cb983a00abefd4b289c24)
+with no accelerator. The live score remains 6/12 until a later, explicitly
+approved Space revision is judged.
+
+Start with the [executable response to the 6/12
+verdict](#/judge-response). Publication of this candidate is intentionally
+awaiting explicit user approval.

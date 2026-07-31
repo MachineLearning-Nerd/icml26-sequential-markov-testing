@@ -1,8 +1,8 @@
 {
   "claims": {
     "claim1": {
-      "C_Q": 16.39753751167437,
-      "D_inf": 0.5255872657311822,
+      "C_Q": 16.397537511674344,
+      "D_inf": 0.525587265731181,
       "checks": {
         "actual_poisson_norm_recomputed": true,
         "full_correction_recomputed": true,
@@ -14,16 +14,16 @@
         "pseudo_gap_recomputed": true,
         "stationary_min_recomputed": true
       },
-      "correction": 321.22657627464275,
-      "pi_min": 0.10209328071071416,
+      "correction": 321.22657627464133,
+      "pi_min": 0.10209328071071447,
       "verdict": "VERIFIED"
     },
     "claim2": {
       "checks": {
-        "analytic_pseudo_gap_max_error": 2.220446049250313e-16,
+        "analytic_pseudo_gap_max_error": 1.1102230246251565e-16,
         "four_actual_operators_recomputed": true,
         "not_finiteness_tautology": true,
-        "paper_bound_max_violation": -5.944076098742181
+        "paper_bound_max_violation": -5.944076098742184
       },
       "verdict": "VERIFIED"
     },

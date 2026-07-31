@@ -19,6 +19,28 @@ give normalized mean stopping times `6.225, 4.43875, 3.30875, 2.74969,
 2.40125`, moving toward the exact coefficient `1/D_inf=1.90263`. Removing
 `psi_t` causes `100/100` null mutant paths to stop.
 
+The sweep calls the same composite Algorithm 1 routine for alternatives and
+for five null parameters × five initial states:
+
+```python
+for log_alpha in (20.0, 40.0, 80.0, 160.0, 320.0):
+    stops = [simulate_test(q, composite_null, log_alpha, seed, 20_000,
+                           initial_state)["stopping_time"]
+             for seed, initial_state in seeded_trials]
+    ratio = statistics.mean(stops) / log_alpha
+
+for theta, initial_state, seed in null_sweep:
+    kernel = parametric_kernel(base, feature, theta)
+    false_alarms += simulate_test(
+        kernel, composite_null, math.log(20), seed, 1_000, initial_state
+    )["stopped"]
+assert false_alarms == 0
+```
+
+There is no known-alternative likelihood ratio in the implementation or
+verifier. The finite sweep is evidence for the theorem's exact test, not a
+claim to replace its proof.
+
 Finite Monte Carlo supports but does not replace the theorem's infinite-limit
 proof.
 
@@ -26,4 +48,6 @@ proof.
 - [Alpha checker](../../evidence/claim4/independent_checker_output.json)
 - [Boundary mutant](../../evidence/claim4/negative_control_output.json)
 - [Executable source manifest](../../candidate_code/source_manifest.json)
+- [Complete composite sweep](../../candidate_code/run_core_campaign.py)
+- [Complete independent verifier](../../verify_candidate.py)
 - [Limitations](../../evidence/claim4/limitations_and_deviations.md)

@@ -20,8 +20,28 @@ boundary is recomputed independently, and the projected parameter lies in the
 null interval. Dropping the `(m-1)` multiplier changes the stop to `7`, so the
 boundary mutant is detected.
 
+The core Algorithm 1 update and stopping rule are visible below:
+
+```python
+counts[state, next_state] += 1
+visits = counts.sum(axis=1)
+empirical = empirical_log_likelihood(counts)
+null_ll = np.max(np.einsum("gij,ij->g", family.log_kernels, counts))
+L_t = max(0.0, empirical - null_ll)
+psi_t = np.log(math.e * (1.0 + visits / (m - 1))).sum()
+beta_t = math.log(1 / alpha) + (m - 1) * psi_t
+if L_t >= beta_t:
+    return stopping_time
+```
+
+The producer refines the continuous null projection with bounded scalar
+optimization. The independent verifier rebuilds every empirical row and uses a
+separate 4,001-point grid before asserting the stopping condition.
+
 - [Claim contract](../../evidence/claim3/claim_contract.json)
 - [Raw trace](../../evidence/claim3/raw_trace.json)
 - [Independent checker](../../evidence/claim3/independent_checker_output.json)
 - [Negative control](../../evidence/claim3/negative_control_output.json)
 - [Executable source manifest](../../candidate_code/source_manifest.json)
+- [Complete Algorithm 1 implementation](../../candidate_code/markov_core.py)
+- [Complete independent verifier](../../verify_candidate.py)
