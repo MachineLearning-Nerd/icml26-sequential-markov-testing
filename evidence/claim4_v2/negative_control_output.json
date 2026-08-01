@@ -1,0 +1,10 @@
+{
+  "remove_psi_t": {
+    "mutant_rejected": true,
+    "violating_count_vectors": 12359
+  },
+  "scale_log_inverse_alpha_by_1_2": {
+    "mutant_rejected": true,
+    "relative_first_order_coefficient": 1.2000034374900435
+  }
+}

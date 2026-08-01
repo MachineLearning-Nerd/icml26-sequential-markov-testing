@@ -1,0 +1,3 @@
+# Method
+
+Mechanically certify every proof dependency. For `Q=[[1/3,2/3],[1,0]]`, `P=[[2/3,1/3],[1,0]]`, the log-likelihood ratio is an integer multiple of `log 2`. The threshold-`k log 2` test has exact Type-I error `2^-k`, power one, stationary information `(log 2)/5`, Poisson endpoint correction `(log 2)/5`, and exact mean `5k-1`; it attains Theorem 3.3's first inequality. Exact rational recursion checks every threshold and all bounded stopping policies through depth four. The universal certificate separately checks data processing, the stopped Wald-Poisson identity, uniform Poisson control, projection, and positive part.

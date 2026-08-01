@@ -1,0 +1,9 @@
+{
+  "dimension_family_matrix_rows": 81,
+  "exhaustive_path_prefixes": 9837,
+  "exhaustive_unique_count_tables": 2551,
+  "runtime_seconds": 73.96749263499805,
+  "stopping_time": 93,
+  "trace_rows": 12,
+  "verdict": "VERIFIED"
+}

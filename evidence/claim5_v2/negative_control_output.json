@@ -1,0 +1,18 @@
+{
+  "normalize_P_by_log_inverse_alpha": {
+    "mutant_rejected": true,
+    "wrong_normalized_coefficients": [
+      0.5196203586359126,
+      2.0273115656595344
+    ]
+  },
+  "replace_minimum_with_maximum": {
+    "mutant_rejected": true,
+    "reason": "Under either truth, the reverse one-sided test is a null e-process and need not ever stop; max can therefore be infinite."
+  },
+  "swap_direction_specific_information": {
+    "D_P_to_Q": 0.26510470901762856,
+    "D_Q_to_P": 0.525587265731181,
+    "mutant_rejected": true
+  }
+}

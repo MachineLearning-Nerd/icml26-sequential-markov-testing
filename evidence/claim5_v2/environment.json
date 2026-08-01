@@ -1,0 +1,10 @@
+{
+  "command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "git_sha": "c37102a05f0ab26f43922eaaa126f35a9db9d162",
+  "logical_cpu_count": 64,
+  "platform": "Linux-6.12.94-123.192.amzn2023.x86_64-x86_64-with-glibc2.36",
+  "processor": "",
+  "python": "3.12.11",
+  "seed": 260217587,
+  "source_sha256": "2561f5fe38413c0fe8455d1f3e9e30ba24e75eb2837c96375e34bd98880bb8e8"
+}

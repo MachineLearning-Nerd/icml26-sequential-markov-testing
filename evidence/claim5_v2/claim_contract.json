@@ -1,0 +1,6 @@
+{
+  "acceptance": "Both truths, three joint approach rates, 128 paths per cell, direction-specific absolute 1.10 gates, 1,000 calibration paths per truth, full Bernoulli-KL/Poisson lower bounds, exact event inclusion, and failing direction/normalizer/minimum mutants.",
+  "quantifiers": "Compact disjoint P,Q; every ergodic truth on either side; joint alpha,beta ->0; finite-mean competitors for the lower bounds.",
+  "statement": "Theorem 4.4's parallel composite Algorithm 1 test is level-(alpha,beta), obeys both full lower bounds, and has the direction-specific first-order limits.",
+  "verdict": "VERIFIED"
+}

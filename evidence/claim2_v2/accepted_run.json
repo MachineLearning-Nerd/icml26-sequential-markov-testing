@@ -1,0 +1,15 @@
+{
+  "backend": "huggingface_jobs",
+  "bundle_bytes": 717012,
+  "bundle_sha256": "710f738a031bd1bd4d8b0a03eb4eeb067f2b50c365540122adfdc9ed5cb0c476",
+  "compute": "Hugging Face cpu-upgrade, CPU only",
+  "evidence_role": "Accepted scientific run; the final presentation commit reruns the same fixed cumulative command.",
+  "fixed_command": "uv sync --frozen && uv run python repro/src/run_publication_gate.py",
+  "git_sha": "c5980d250d89368030c5ce9c160583e7f4d83460",
+  "gpu_used": false,
+  "hf_job_id": "DineshAI/6a6d0d14a00abefd4b28a381",
+  "job_url": "https://huggingface.co/jobs/DineshAI/6a6d0d14a00abefd4b28a381",
+  "paid_cost_usd_estimate": 0.047325,
+  "running_seconds": 5679,
+  "seed": 260217587
+}

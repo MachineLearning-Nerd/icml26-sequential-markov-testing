@@ -1,0 +1,10 @@
+{
+  "alternative_cells": 15,
+  "independent_alternative_paths": 384,
+  "independent_null_paths": 2000,
+  "max_final_upper95_relative_to_target": 1.0299323976504546,
+  "mixture_count_vectors": 12364,
+  "runtime_seconds": 2656.8984555839997,
+  "stationary_flow_cells": 75,
+  "verdict": "VERIFIED"
+}

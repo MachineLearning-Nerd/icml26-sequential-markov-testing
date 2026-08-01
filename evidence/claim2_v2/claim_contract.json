@@ -1,0 +1,6 @@
+{
+  "acceptance": "Audit the total-variation proof including its n=0 endpoint, certify each pseudo-gap maximization with an untested-tail bound, compute the actual induced Poisson operator norm and an attaining sign witness across at least 60 multi-family cells, cover gamma_ps=1, and reject constant mutations.",
+  "quantifiers": "Every finite-state ergodic P and every real vector f; gamma_ps in (0,1) uses the displayed mixing constant, while gamma_ps=1 uses C_P=2.",
+  "statement": "Proposition 3.1 bounds the closed-form Poisson solution uniformly in f by its explicit piecewise pseudo-spectral-gap constant.",
+  "verdict": "VERIFIED"
+}

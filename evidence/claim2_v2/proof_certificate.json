@@ -1,0 +1,44 @@
+{
+  "all_obligations_verified": true,
+  "obligations": [
+    {
+      "id": "C1-change-of-measure",
+      "statement": "Stopped-path KL dominates the Bernoulli KL of the stop event, yielding log(1/alpha) for a power-one alpha-correct test.",
+      "status": "VERIFIED",
+      "verified_by": "log-sum/data-processing identity and the exact likelihood-ratio hitting family"
+    },
+    {
+      "id": "C1-stopped-Wald-Poisson",
+      "statement": "Expected stopped log likelihood equals E[tau] D_M plus the endpoint Poisson correction.",
+      "status": "VERIFIED",
+      "verified_by": "exact rational enumeration of 1354 bounded stopping policies"
+    },
+    {
+      "id": "C1-uniform-projection",
+      "statement": "The endpoint term is at most 2 C_Q ||f_P||_infinity and D_M >= pi_min ||f_P||_infinity, uniformly in P.",
+      "status": "VERIFIED",
+      "verified_by": "triangle inequality, Proposition 3.1, and nonnegative row KL"
+    },
+    {
+      "id": "C2-series-control",
+      "statement": "The centered Poisson series is bounded rowwise by total-variation mixing and a geometric series controlled by gamma_ps.",
+      "status": "VERIFIED",
+      "verified_by": "actual operator witnesses, certified pseudo-gap maxima, and the explicit n=0 repair"
+    },
+    {
+      "id": "C2-corners",
+      "statement": "Ergodicity excludes gamma_ps=0 and gamma_ps=1 gives identical rows with C_P=2.",
+      "status": "VERIFIED",
+      "verified_by": "finite mixing implication and six explicit iid-corner matrices"
+    }
+  ],
+  "source_repairs": [
+    {
+      "changes_the_claim": false,
+      "issue": "The cited Paulin inequality is stated for n>=1 but the displayed geometric sum starts at n=0.",
+      "location": "appendix.tex, proof of Proposition 3.1",
+      "repair": "Bound the n=0 row exactly by 2(1-pi_x)||f|| and verify 2(1-pi_x) <= (1-gamma)^(-1/(2gamma))/sqrt(pi_x); then sum Paulin from n=1."
+    }
+  ],
+  "verdict": "VERIFIED"
+}

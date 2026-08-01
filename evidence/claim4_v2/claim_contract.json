@@ -1,0 +1,6 @@
+{
+  "acceptance": "Exact e-process proof obligations, 2,000 broad null paths, 128 paths per alternative/threshold cell, final upper confidence ratio <=1.10, a 150-cell stationary-flow matrix, and rejected boundary/coefficient mutants.",
+  "quantifiers": "Every alpha in (0,1), every initial distribution and null member for correctness, and every ergodic separated alternative for the limsup.",
+  "statement": "Theorem 4.1 gives infinite-horizon alpha-correctness and the first-order Algorithm 1 coefficient 1/D_M^inf.",
+  "verdict": "VERIFIED"
+}

@@ -1,0 +1,10 @@
+{
+  "asymptotic_cells": 30,
+  "calibration_cells": 6,
+  "decision_errors": 0,
+  "independent_asymptotic_paths": 256,
+  "independent_calibration_paths": 2000,
+  "max_final_upper95_relative_to_target": 1.0417864936173233,
+  "runtime_seconds": 851.8622981119988,
+  "verdict": "VERIFIED"
+}

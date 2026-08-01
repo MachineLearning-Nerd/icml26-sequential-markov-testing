@@ -1,0 +1,6 @@
+{
+  "acceptance": "Verify the complete change-of-measure/Wald/Poisson/projection proof chain, exactly enumerate all 1,354 bounded stopping policies through depth four, and certify a closed-form power-one test family that attains the first bound and rejects the leading-only mutant.",
+  "quantifiers": "Every alpha in (0,1), every initial distribution, every ergodic Q, every alpha-correct power-one stopping time, and every P in the null; the projected bound takes the positive part.",
+  "statement": "Theorem 3.3's two lower bounds hold for every alpha-correct power-one test under the stated ergodicity and absolute-continuity assumptions.",
+  "verdict": "VERIFIED"
+}

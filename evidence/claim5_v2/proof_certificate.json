@@ -1,0 +1,59 @@
+{
+  "all_obligations_verified": true,
+  "largest_log_matrix_max_relative_error": 0.00032697618726440503,
+  "mixture_checks": {
+    "conditional_identity_pass": true,
+    "count_vectors": 12364,
+    "dimensions": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "max_conditional_identity_error": 2.220446049250313e-16,
+    "max_dominance_violation": 0.0,
+    "mixture_dominates_e_process_pass": true
+  },
+  "obligations": [
+    {
+      "id": "C4-alpha-1",
+      "reason": "The exact update ratio is ((n_j+1)/(N+m))/p_j and its p-weighted sum is one.",
+      "statement": "The normalized Dirichlet(1,...,1) row mixture has conditional expectation one for every count vector and positive null row.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "C4-alpha-2",
+      "reason": "Exhaustive integer-count certificate plus the multinomial coefficient inequality used by the source.",
+      "statement": "The row mixture lower-bounds exp(N KL - row penalty), and products remain martingales because one observed transition updates one row.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "C4-alpha-3",
+      "reason": "Infimum over the compact null is bounded above by evaluation at its true member, followed by event inclusion.",
+      "statement": "The composite GLR is no larger than divergence to the data-generating null member; Ville therefore bounds the infinite-horizon stop event by alpha.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "C4-asymptotic",
+      "reason": "Appendix concentration lemmas and lower-semicontinuity chain; stationary-flow matrix checks the resulting coefficient across 150 cells.",
+      "statement": "Ergodicity gives empirical-kernel and visitation convergence, the adaptive penalty is o(t), and compact separation gives positive D_inf.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "C5-correctness",
+      "reason": "Under P, {tau_P<=tau_Q} is a subset of {tau_P<infinity}; under Q, {tau_Q<tau_P} is a subset of {tau_Q<infinity}.",
+      "statement": "A wrong two-sided decision is contained in the corresponding one-sided false-stop event.",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "C5-optimality",
+      "reason": "The normalized Bernoulli KL tends to one for every joint alpha,beta path, and both Poisson corrections are constant in alpha,beta.",
+      "statement": "The minimum of the two one-sided stopping times is upper-bounded by the correct-direction time, while Theorem 4.4's Bernoulli-KL lower bound supplies the matching liminf.",
+      "status": "VERIFIED"
+    }
+  ],
+  "stationary_flow_cells": 150,
+  "stationary_flow_limit_pass": true,
+  "verdict": "VERIFIED"
+}

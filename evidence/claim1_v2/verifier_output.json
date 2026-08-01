@@ -1,0 +1,8 @@
+{
+  "bounded_stopping_policies": 1354,
+  "exact_test_thresholds": 17,
+  "leading_only_counterexamples": 17,
+  "nonvacuous_full_bound_cells": 8,
+  "runtime_seconds": 0.009452711001358693,
+  "verdict": "VERIFIED"
+}

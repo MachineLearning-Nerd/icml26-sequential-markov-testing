@@ -1,0 +1,23 @@
+{
+  "dimensions": [
+    2,
+    3,
+    5,
+    10,
+    25,
+    50
+  ],
+  "families": [
+    "cycle",
+    "dense",
+    "iid-corner",
+    "reversible",
+    "skewed",
+    "sticky"
+  ],
+  "iid_corner_cells": 6,
+  "matrix_cells": 66,
+  "max_bound_ratio": 0.9997614501843428,
+  "runtime_seconds": 0.025690249000035692,
+  "verdict": "VERIFIED"
+}

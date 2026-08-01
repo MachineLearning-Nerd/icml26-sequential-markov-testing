@@ -1,0 +1,42 @@
+{
+  "candidate_code/claim12_certificate.py": {
+    "repository_path": "repro/src/claim12_certificate.py",
+    "sha256": "cc50ce5ab08d18c3d184b42e7ef2807f7b3bfece0082b71046153929e2fe9e29"
+  },
+  "candidate_code/claim3_cleanroom.py": {
+    "repository_path": "repro/src/claim3_cleanroom.py",
+    "sha256": "03fdff607e392e77e36cd734d787502cedf57ffb5b7e893afb3cbec570a963a4"
+  },
+  "candidate_code/claim45_certificate.py": {
+    "repository_path": "repro/src/claim45_certificate.py",
+    "sha256": "03831323905f7b6e855dad344aeceeba348760d70e727883ff90991d601b8c46"
+  },
+  "candidate_code/markov_core.py": {
+    "repository_path": "repro/src/markov_core.py",
+    "sha256": "c1dedc01f047ee6b859534bbfe3998986f030882a4a7b80cb6326782e9346b36"
+  },
+  "candidate_code/run_applications.py": {
+    "repository_path": "repro/src/run_applications.py",
+    "sha256": "2864439cea73eee21e14db6a9d462370e839a388812110e916e4eda9aeba0a48"
+  },
+  "candidate_code/run_claim12_v2.py": {
+    "repository_path": "repro/src/run_claim12_v2.py",
+    "sha256": "25fca86b3d8c7f0fb9c92c94a46722a74b9454937c9aa6f62d2c054ff0a93ede"
+  },
+  "candidate_code/run_claim45_v2.py": {
+    "repository_path": "repro/src/run_claim45_v2.py",
+    "sha256": "6e8aefe51d4ae2b7010607632b04e202e0823f192f4424c7b02d8ea37d68b8e5"
+  },
+  "candidate_code/run_core_campaign.py": {
+    "repository_path": "repro/src/run_core_campaign.py",
+    "sha256": "ca5099e26d0e93b69b198d78e27522588ee793bb14dd3f78d5b0f3a5d85873c6"
+  },
+  "candidate_code/test_markov_core.py": {
+    "repository_path": "repro/tests/test_markov_core.py",
+    "sha256": "6a2dd98dbb5dbf675c979dadf1631d36e259839d0f31ee2b4976283f298b8141"
+  },
+  "verify_candidate.py": {
+    "repository_path": "repro/src/verify_judge_bundle.py",
+    "sha256": "3c1cf6770ca77dccf16f91a67b698e89e6f31eedf64c64b3c429c495344ae106"
+  }
+}

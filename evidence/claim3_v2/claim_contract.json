@@ -1,0 +1,6 @@
+{
+  "acceptance": "All 9,837 enumerated path prefixes and every multi-scale matrix row must agree with a clean-room Perron/row-KL implementation; both stop and continue decisions must occur; all five component mutants must be rejected.",
+  "quantifiers": "Every enumerated positive-probability path prefix in the exhaustive 3-state audit, plus every checkpoint in the preregistered 5/10/25/50-state family matrix.",
+  "statement": "Algorithm 1 empirical kernel, row-wise composite GLR L_t, psi_t, beta_t, and stopping condition.",
+  "verdict": "VERIFIED"
+}

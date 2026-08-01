@@ -1,0 +1,24 @@
+{
+  "all_actual_operators_bounded": true,
+  "all_sign_witnesses_exact": true,
+  "dimensions": [
+    2,
+    3,
+    5,
+    10,
+    25,
+    50
+  ],
+  "families": [
+    "cycle",
+    "dense",
+    "iid-corner",
+    "reversible",
+    "skewed",
+    "sticky"
+  ],
+  "finite_pseudo_gap_certificates": true,
+  "iid_corner_covered": true,
+  "matrix_cells": 66,
+  "source_n0_gap_repaired": true
+}

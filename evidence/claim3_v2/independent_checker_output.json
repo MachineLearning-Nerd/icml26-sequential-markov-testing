@@ -1,0 +1,23 @@
+{
+  "all_mutants_rejected": true,
+  "cleanroom_imports_production_code": false,
+  "cleanroom_sha256": "03fdff607e392e77e36cd734d787502cedf57ffb5b7e893afb3cbec570a963a4",
+  "dimension_family_matrix_pass": true,
+  "dimensions": [
+    5,
+    10,
+    25,
+    50
+  ],
+  "exhaustive_all_prefixes_pass": true,
+  "exhaustive_stop_and_continue_exercised": true,
+  "families": [
+    "dense",
+    "sticky",
+    "cycle"
+  ],
+  "matrix_rows": 81,
+  "max_boundary_error": 4.547473508864641e-13,
+  "max_empirical_kernel_error": 0.0,
+  "max_statistic_error": 3.780087354243733e-12
+}

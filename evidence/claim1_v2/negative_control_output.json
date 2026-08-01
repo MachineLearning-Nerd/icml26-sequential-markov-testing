@@ -1,0 +1,12 @@
+{
+  "omit_poisson_correction": {
+    "counterexample_satisfies_assumptions": true,
+    "mutant_rejected": true,
+    "violating_thresholds": 17
+  },
+  "replace_stationary_weighting_by_max_row_kl": {
+    "max_row_information_coefficient": 0.3333333333333333,
+    "mutant_rejected": true,
+    "stationary_information_coefficient": 0.2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "absolute_final_ratio_gate": true,
+  "all_mutants_rejected": true,
+  "both_truths": true,
+  "calibration_cp_bounds_below_nominal": true,
+  "full_lower_bounds_checked": true,
+  "joint_rate_paths": true,
+  "paper_scale_exceeded": true,
+  "proof_certificate": true,
+  "zero_asymptotic_decision_errors": true
+}

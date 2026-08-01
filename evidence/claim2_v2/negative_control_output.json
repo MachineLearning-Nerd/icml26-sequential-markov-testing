@@ -1,0 +1,14 @@
+{
+  "omit_n_equals_zero_contribution": {
+    "mutant_rejected": true,
+    "violating_cells": 6
+  },
+  "omit_pi_min_factor": {
+    "mutant_rejected": true,
+    "violating_cells": 14
+  },
+  "set_iid_corner_constant_to_zero": {
+    "mutant_rejected": true,
+    "violating_cells": 6
+  }
+}

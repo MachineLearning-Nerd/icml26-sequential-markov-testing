@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "title": "Reproduction: Asymptotically Optimal Sequential Testing with Markovian Data",
+  "emoji": "🎯",
+  "space_id": "DineshAI/YEckWPoS09",
+  "paper": null,
+  "tags": [
+    "icml2026-repro",
+    "paper-YEckWPoS09"
+  ],
+  "updated_at": "2026-07-31T19:31:00+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Reproduction: Asymptotically Optimal Sequential Testing with Markovian Data",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "executive-summary",
+        "title": "Executive summary",
+        "file": "pages/executive-summary/page.md",
+        "children": []
+      },
+      {
+        "slug": "c1-lower-bound",
+        "title": "CURRENT C1 — full Theorem 3.3 lower bound",
+        "file": "pages/c1-lower-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "c2-poisson-control",
+        "title": "CURRENT C2 — Proposition 3.1 Poisson control",
+        "file": "pages/c2-poisson-control/page.md",
+        "children": []
+      },
+      {
+        "slug": "c3-algorithm-1",
+        "title": "CURRENT C3 — composite Algorithm 1",
+        "file": "pages/c3-algorithm-1/page.md",
+        "children": []
+      },
+      {
+        "slug": "c4-one-sided-optimality",
+        "title": "CURRENT C4 — one-sided composite optimality",
+        "file": "pages/c4-one-sided-optimality/page.md",
+        "children": []
+      },
+      {
+        "slug": "c5-two-sided-testing",
+        "title": "CURRENT C5 — two-sided composite test",
+        "file": "pages/c5-two-sided-testing/page.md",
+        "children": []
+      },
+      {
+        "slug": "c6-applications",
+        "title": "CURRENT C6 — MCMC and linear-MDP applications",
+        "file": "pages/c6-applications/page.md",
+        "children": []
+      },
+      {
+        "slug": "current-conclusion",
+        "title": "Conclusion",
+        "file": "pages/current-conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 9000,
+  "revision": "canonical-eight-page-candidate"
+}

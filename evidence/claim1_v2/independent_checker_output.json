@@ -1,0 +1,17 @@
+{
+  "all_bounded_stopping_identities": true,
+  "all_fixed_horizon_data_processing_inequalities": true,
+  "bounded_stopping_policies": 1354,
+  "calendar_stopping_recurrences": true,
+  "exact_centering": true,
+  "exact_first_bound_attained": true,
+  "exact_information_coefficient": true,
+  "exact_poisson_equation": true,
+  "exact_stationary_distribution": true,
+  "fixed_horizon_data_processing_events": 284,
+  "full_bound_nonvacuous": true,
+  "gambler_hitting_recurrences": true,
+  "leading_only_mutant_rejected": true,
+  "power_one_positive_drift": true,
+  "uniform_type_i_formula": true
+}

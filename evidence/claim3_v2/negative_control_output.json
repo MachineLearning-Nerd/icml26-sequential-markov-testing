@@ -1,0 +1,29 @@
+{
+  "all_mutants_rejected": true,
+  "mutants": {
+    "omit_m_minus_one_multiplier": {
+      "mutant_beta_t": 11.632495726528912,
+      "paper_beta_t": 37.54278608545368,
+      "rejected": true
+    },
+    "omit_row_visit_weights": {
+      "mutant_L_t": 3.932282596119991,
+      "paper_L_t": 13.162128435280115,
+      "rejected": true
+    },
+    "singleton_instead_of_composite_projection": {
+      "mutant_L_t": 16.223492965258203,
+      "paper_L_t": 13.162128435280115,
+      "rejected": true
+    },
+    "static_log_boundary": {
+      "mutant_beta_t": 2.995732273553991,
+      "paper_beta_t": 37.54278608545368,
+      "rejected": true
+    },
+    "zero_instead_of_uniform_unvisited_rows": {
+      "max_difference": 0.2,
+      "rejected": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "absolute_final_ratio_gate": true,
+  "both_mutants_rejected": true,
+  "finite_horizon_cp_bounds_below_nominal": true,
+  "paper_scale_exceeded": true,
+  "proof_certificate": true,
+  "three_alternatives": true,
+  "two_thousand_null_paths": true
+}

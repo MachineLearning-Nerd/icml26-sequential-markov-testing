@@ -1,0 +1,12 @@
+{
+  "all_path_prefixes": 9837,
+  "continue_count_tables": 1719,
+  "initial_states": 3,
+  "max_boundary_error": 1.7763568394002505e-15,
+  "max_kernel_error": 1.8096635301390052e-14,
+  "max_statistic_error": 2.753353101070388e-13,
+  "states": 3,
+  "stop_count_tables": 832,
+  "transitions": 7,
+  "unique_count_tables": 2551
+}
