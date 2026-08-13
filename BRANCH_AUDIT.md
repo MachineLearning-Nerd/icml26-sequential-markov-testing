@@ -35,3 +35,15 @@ labels only.
 - Maintainer identity: MachineLearning-Nerd.
 - Historical branch cleanup: recorded after the canonical main was published.
 - Paper source: arXiv:2602.17587v3, OpenReview: YEckWPoS09.
+
+## Live verification
+
+The GitHub metadata and branch list were checked on 2026-08-13:
+
+- Repository name: `icml26-sequential-markov-testing`.
+- Default and only remote branch: `main`.
+- Repository homepage: https://arxiv.org/abs/2602.17587v3.
+- Reachable local and remote commit identities: MachineLearning-Nerd with the
+  requested no-reply address.
+- Local branch state: `main` tracks
+  `origin/main` with no legacy branch refs.
