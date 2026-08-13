@@ -1,6 +1,6 @@
 # C2 — Proposition 3.1 Poisson control
 
-**Candidate evidence verdict: VERIFIED. Live judged baseline: TOY until this candidate is published and judged.**
+**Finite contract status: PASS. Paper-level status: not independently verified.**
 
 The old evidence only checked four two-state chains. The replacement computes the actual centered Poisson operator, its induced infinity norm, and an attaining sign-vector witness in 66 cells: dense, sticky, cyclic, reversible, skewed, and i.i.d.-corner kernels in 2, 3, 5, 10, 25, and 50 states.
 

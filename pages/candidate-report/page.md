@@ -1,9 +1,10 @@
 # Faithful campaign report
 
-All six source-pinned candidate contracts are **VERIFIED**. This is not a
-predicted judge score: the live judge gave revision
-`d9bd4a1dbdcefc5ae653cca2b6d0f5b7b324237a` 7/12. Claim 6 is `VERIFIED`, while
-Claims 1--5 are `TOY`. This candidate preserves that revision and makes the
+All six source-pinned finite candidate contracts pass. The paper-level status is
+0/6 independently verified, so the consolidated result is **INCONCLUSIVE**.
+This is not a predicted judge score: the historical judge gave revision
+`d9bd4a1dbdcefc5ae653cca2b6d0f5b7b324237a` 7/12, with Claim 6 `VERIFIED` and
+Claims 1--5 `TOY`. This candidate preserves that revision and makes the
 relevant proof, producer, and checker operations visible directly on every
 claim page.
 
@@ -32,6 +33,6 @@ with no accelerator. The strengthened C1--C5 gate passed at commit
 also with no accelerator. The live score remains 7/12 until a later, explicitly
 approved Space revision is judged.
 
-Start with the [executable response to the 7/12
-verdict](#/judge-response). Publication of this candidate is intentionally
-awaiting explicit user approval.
+Start with the [executable response to the historical 7/12
+verdict](#/judge-response). The finite evidence is published for inspection; it
+does not claim a new judge result.

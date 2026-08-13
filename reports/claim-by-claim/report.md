@@ -2,11 +2,11 @@
 
 ![Six claim contracts pass while the live judge gives the published revision 5/12](images/headline_claim_status.png)
 
-The candidate evidence passes six source-pinned contracts. The green bars are **not a
-predicted judge score**: the live score is 5/12 at Hugging Face revision
-`66d5e67b5426622768e4d797656e409526f3a299`. The repair described here is
-published at revision `a3b49a603d3777270e8e1cd11eb312f4e92efbe2` and is
-awaiting a new judge verdict.
+The candidate evidence passes six source-pinned finite contracts. The green bars
+are **not paper-level verification or a predicted judge score**: the live score
+is 5/12 at Hugging Face revision `66d5e67b5426622768e4d797656e409526f3a299`.
+The repair described here is published at revision
+`a3b49a603d3777270e8e1cd11eb312f4e92efbe2` and has no new judge verdict.
 
 ## Why the judge awarded 5/12
 
@@ -73,17 +73,19 @@ the null interval. Deleting the paper's \((m-1)\) multiplier changed the stop to
 
 | Claim | Paper statement tested | Observed evidence | Verdict |
 |---|---|---|---|
-| C1 | Theorem 3.3 full lower bound, including \(-2C_Q/\pi_{\min}\) | \(D^\inf_M=0.525587\), \(C_Q=16.3975\), \(\pi_{\min}=0.102093\), penalty \(321.227\); a non-vacuous cell gives full bound \(321.227\), not the leading term \(642.453\) | **VERIFIED** |
-| C2 | Proposition 3.1 bounds the actual Poisson solution using the pseudo-spectral gap | Four analytic two-state cells: computed gaps match \(1-(1-a-b)^2\); actual induced norms \(1.429\)–\(4.444\) are below paper constants \(7.586\)–\(24.125\) | **VERIFIED** |
-| C3 | Algorithm 1 uses empirical rows, composite row-wise KL, and adaptive \(\beta_t\) | Full five-state trace, exact invariants, dense-grid GLR checker, and boundary mutant | **VERIFIED** |
-| C4 | Algorithm 1 is alpha-correct and has first-order coefficient \(1/D^\inf_M\) | 0/200 finite-horizon null alarms; one-sided 95% upper bound 0.01487 < 0.05. Over a 16× log-threshold sweep, normalized mean time moves 6.225 → 2.401 toward \(1/D^\inf_M=1.903\) | **VERIFIED** |
-| C5 | Theorem 4.4 uses two parallel composite tests | 90 trials over both truths and three thresholds, 0 decision errors; both normalized sequences move toward direction-specific coefficients; a singleton-SPRT substitution changes the objective | **VERIFIED** |
-| C6 | Corollaries 5.1 and 5.3 instantiate the framework for MCMC and linear MDPs | Exact Appendix-G MCMC matrices and reported MountainCar state/action dimensions, with valid-null controls and independent convex projection checks | **VERIFIED** |
+| C1 | Theorem 3.3 full lower bound, including \(-2C_Q/\pi_{\min}\) | \(D^\inf_M=0.525587\), \(C_Q=16.3975\), \(\pi_{\min}=0.102093\), penalty \(321.227\); a non-vacuous cell gives full bound \(321.227\), not the leading term \(642.453\) | **FINITE CONTRACT PASS** |
+| C2 | Proposition 3.1 bounds the actual Poisson solution using the pseudo-spectral gap | Four analytic two-state cells: computed gaps match \(1-(1-a-b)^2\); actual induced norms \(1.429\)–\(4.444\) are below paper constants \(7.586\)–\(24.125\) | **FINITE CONTRACT PASS** |
+| C3 | Algorithm 1 uses empirical rows, composite row-wise KL, and adaptive \(\beta_t\) | Full five-state trace, exact invariants, dense-grid GLR checker, and boundary mutant | **FINITE CONTRACT PASS** |
+| C4 | Algorithm 1 is alpha-correct and has first-order coefficient \(1/D^\inf_M\) | 0/200 finite-horizon null alarms; one-sided 95% upper bound 0.01487 < 0.05. Over a 16× log-threshold sweep, normalized mean time moves 6.225 → 2.401 toward \(1/D^\inf_M=1.903\) | **FINITE CONTRACT PASS** |
+| C5 | Theorem 4.4 uses two parallel composite tests | 90 trials over both truths and three thresholds, 0 decision errors; both normalized sequences move toward direction-specific coefficients; a singleton-SPRT substitution changes the objective | **FINITE CONTRACT PASS** |
+| C6 | Corollaries 5.1 and 5.3 instantiate the framework for MCMC and linear MDPs | Exact Appendix-G MCMC matrices and reported MountainCar state/action dimensions, with valid-null controls and independent convex projection checks | **FINITE CONTRACT PASS** |
 
-“VERIFIED” means the declared finite claim contract and its source-audited proof
-obligations pass. For C1, C2, C4, and C5, numerical experiments support but do not
-replace the paper's universal or limiting mathematical proof. This distinction is
-kept in each claim's `limitations_and_deviations.md`.
+“FINITE CONTRACT PASS” means the declared finite claim contract and its
+source-audited obligations pass. For C1, C2, C4, and C5, numerical experiments
+support but do not replace the paper's universal or limiting mathematical proof.
+The consolidated paper-level result is 0/6 independently verified and therefore
+INCONCLUSIVE. This distinction is kept in each claim's
+`limitations_and_deviations.md`.
 
 ## One-sided optimality
 
@@ -144,7 +146,8 @@ This campaign directly answers the prior judge criticisms: the full Theorem 3.3
 correction is computed; Proposition 3.1 uses an actual Poisson solution and analytic
 pseudo-gap checker; C3–C5 use composite Algorithm 1 rather than SPRTs; and C6 runs
 both named applications with null controls. The candidate has stronger, faithful
-evidence for all six claims.
+finite evidence for all six claims. It does not independently verify the six
+paper-level claims.
 
 The live score remains **5/12**. The executable repair passed its additive
 old/new subset proof, logbook validation, exact text-file manifest, secret
@@ -152,9 +155,5 @@ scan, and cumulative local run before publication. Revision
 `a3b49a603d3777270e8e1cd11eb312f4e92efbe2` is now awaiting a new live judge
 verdict; no score increase is claimed in advance.
 
-Important lineage:
-
-- [Frozen judged baseline](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/frozen-judged-baseline-certificate)
-- [Faithful core contracts and Algorithm 1](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/faithful-core-contracts-and-algorithm-1)
-- [Corrected paper-scale application evidence](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/corrected-paper-scale-application-evidence)
-- [Judge-visible executable claim evidence](https://github.com/MachineLearning-Nerd/icml26-repro-YEckWPoS09-sequential-markov-testing/tree/orx/judge-visible-executable-claim-evidence)
+Historical branch roles and the canonical branch policy are recorded in
+[BRANCH_AUDIT.md](../../BRANCH_AUDIT.md).

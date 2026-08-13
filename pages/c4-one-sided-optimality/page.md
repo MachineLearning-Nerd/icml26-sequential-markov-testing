@@ -1,7 +1,6 @@
 # C4 — one-sided alpha control and optimality
 
-**Candidate verdict: VERIFIED. Live judge verdict remains TOY until this
-candidate is published and judged.**
+**Finite contract status: PASS. Paper-level status: not independently verified.**
 
 This candidate tests Theorem 4.1 itself: the composite Algorithm 1 GLR, its
 adaptive `psi_t` boundary, infinite-horizon alpha control, and the coefficient

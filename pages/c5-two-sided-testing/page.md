@@ -1,7 +1,6 @@
 # C5 — two-sided composite test
 
-**Candidate verdict: VERIFIED. Live judge verdict remains TOY until this
-candidate is published and judged.**
+**Finite contract status: PASS. Paper-level status: not independently verified.**
 
 This is Theorem 4.4's construction: two non-singleton composite Algorithm 1
 tests run on the same path, stopping at their minimum with the paper's tie

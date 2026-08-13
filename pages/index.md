@@ -1,5 +1,8 @@
 # Reproduction: Asymptotically Optimal Sequential Testing with Markovian Data
 
+**Status: 6/6 finite contracts pass; 0/6 paper-level claims independently
+verified; overall INCONCLUSIVE.**
+
 ## Pages
 
 | Page |

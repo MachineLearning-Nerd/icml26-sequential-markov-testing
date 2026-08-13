@@ -1,6 +1,6 @@
 # C1 — full Theorem 3.3 lower bound
 
-**Candidate evidence verdict: VERIFIED. Live judged baseline: TOY until this candidate is published and judged.**
+**Finite contract status: PASS. Paper-level status: not independently verified.**
 
 The old page checked one five-state test and could not establish a theorem quantified over every alpha-correct power-one stopping time. The replacement separates an exact witness family from the universal proof certificate.
 

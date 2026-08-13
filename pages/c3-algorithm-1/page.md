@@ -1,7 +1,6 @@
 # C3 — exhaustive dual-scale Algorithm 1 audit
 
-**Candidate verdict: VERIFIED. Live judge verdict remains TOY until this
-additive evidence is published and re-evaluated.**
+**Finite contract status: PASS. Paper-level status: not independently verified.**
 
 The new audit checks Algorithm 1 at two complementary scales. It exhaustively
 enumerates every one of the 9,837 path prefixes through seven transitions from

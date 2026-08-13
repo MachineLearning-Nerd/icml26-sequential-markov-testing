@@ -1,15 +1,16 @@
 # Conclusion
 
-The candidate resolves all six selected claims as **VERIFIED** under explicit,
-source-pinned contracts. Claims 1–2 combine exact witnesses with audits of the
-universal proof dependencies; Claim 3 exhaustively checks Algorithm 1's
-components; Claims 4–5 combine executable martingale/proof certificates with
-finite-sample confidence gates; and Claim 6 reruns both named applications.
-Every negative control is required to fail, all evidence regenerates from the
-single fixed command, and no GPU was used.
+The consolidated audit reports **6/6 finite contracts pass, 0/6 paper claims
+independently verified, overall INCONCLUSIVE**. Claims 1–2 combine exact
+witnesses with finite audits of proof dependencies; Claim 3 checks Algorithm
+1's components; Claims 4–5 combine executable certificates with finite-sample
+gates; and Claim 6 reruns both named applications. Every negative control is
+required to fail, all evidence regenerates from the fixed command, and no GPU
+was used.
 
-This is not a predicted score. The live result remains 7/12 until the candidate
-is published to the existing Space and independently judged.
+The historical live results are 5/12 and 7/12 on earlier Hugging Face
+revisions. They are provenance only; no new judge verdict is claimed from the
+finite audit.
 
 ## Reproducibility notes
 

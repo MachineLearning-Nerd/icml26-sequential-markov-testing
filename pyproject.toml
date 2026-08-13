@@ -1,7 +1,7 @@
 [project]
 name = "sequential-markov-testing-reproduction"
 version = "0.1.0"
-description = "CPU reproduction of Asymptotically Optimal Sequential Testing with Markovian Data"
+description = "Independent source-pinned finite-contract audit of Asymptotically Optimal Sequential Testing with Markovian Data"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
